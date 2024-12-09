@@ -24,11 +24,12 @@ const app = Vue.createApp({
         title() {
             return this.brand + ' ' + this.product
         }
-    },
+    ,
     image() {
         return this.variants[this.selectedVariant].image
     },
     inStock() {
         return this.variants[this.selectedVariant].quantity
     },
+}
 })
